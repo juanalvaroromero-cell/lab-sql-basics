@@ -59,6 +59,7 @@ In the order table, what are the order_ids of the client with the account_id 34?
 select order_id from `order` where account_id=34;
 
 /*
+Query 10
 In the order table, which account_ids were responsible for orders between order_id 29540 and order_id 29560 (inclusive)?
 */
 
