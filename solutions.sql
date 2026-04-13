@@ -76,7 +76,7 @@ Query 12
 In the trans table, show the trans_id, date, type and amount of the 10 first transactions from account_id 793 in chronological order, from newest to oldest.
 */
 
-select trans_id,date,type,amount from trans where account_id=793 order by date DESC LIMIT 10;
+select trans_id,date,type,amount from trans where account_id=793 ORDER BY trans_id DESC LIMIT 10;
 
 /*
 Query 13
@@ -111,7 +111,10 @@ Query 17
 In the loan table, for each day in December 1997, count the number of loans issued for each unique loan duration, ordered by date and duration, both in ascending order. You can ignore days without any loans in your output.
 */
 
-select DISTINCT date,duration,count(*) from loan where date>=971201 and date<=971231 group by date,duration order by date,duration ASC;
+SELECT date, duration, COUNT(*) FROM loan
+WHERE date>=971201 and date<=971231
+GROUP BY date, duration
+ORDER BY date ASC, duration ASC;
 
 /*
 Query 18
