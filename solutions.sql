@@ -48,7 +48,6 @@ select account_id from loan where duration=60 order by amount ASC LIMIT 5;
 /*
 Query 8
 What are the unique values of k_symbol in the order table?
-
 Note: There shouldn't be a table name order, since order is reserved from the ORDER BY clause. You have to use backticks to escape the order table name.
 */
 select DISTINCT k_symbol from `order`;
