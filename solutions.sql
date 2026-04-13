@@ -51,7 +51,7 @@ What are the unique values of k_symbol in the order table?
 
 Note: There shouldn't be a table name order, since order is reserved from the ORDER BY clause. You have to use backticks to escape the order table name.
 */
-select DISTINCT k_symbol from `order` where k_symbol!=" ";
+select DISTINCT k_symbol from `order`;
 /*
 Query 9
 In the order table, what are the order_ids of the client with the account_id 34?
@@ -62,7 +62,9 @@ select order_id from `order` where account_id=34;
 /*
 In the order table, which account_ids were responsible for orders between order_id 29540 and order_id 29560 (inclusive)?
 */
-select DISTINCT account_id from `order` where order_id>=29540 and order_id<=29560;
+
+select DISTINCT account_id from `order` 
+where order_id>=29540 and order_id<=29560;
 
 /*
 Query 11
