@@ -1,4 +1,4 @@
-/* Query 1 - 
+/* Query 1 -version2.0
 Get the id values of the first 5 clients from district_id with a value equals to 1.
 */
 
